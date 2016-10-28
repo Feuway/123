@@ -1,0 +1,21 @@
+{
+  "name": "jwood",
+  "version": "1.0.0",
+  "description": "\"# jwood\"",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Feuway/jwood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Feuway/jwood/issues"
+  },
+  "homepage": "https://github.com/Feuway/jwood#readme"
+}
