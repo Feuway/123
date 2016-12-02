@@ -183,38 +183,61 @@ header {
     align-content: space-between;
     height: 425px; }
   .portfolio__gallery-photo {
+    display: block;
     width: 200px;
-    height: 200px; }
-    .portfolio__gallery-photo--1 {
-      background: url("../img/1.jpg") no-repeat;
-      background-size: cover; }
-    .portfolio__gallery-photo--2 {
-      background: url("../img/2.jpg") no-repeat;
-      background-size: cover; }
-    .portfolio__gallery-photo--3 {
-      background: url("../img/3.jpg") no-repeat;
-      background-size: cover; }
-    .portfolio__gallery-photo--4 {
-      background: url("../img/4.jpg") no-repeat;
-      background-size: cover; }
-    .portfolio__gallery-photo--5 {
-      background: url("../img/5.jpg") no-repeat;
-      background-size: cover; }
-    .portfolio__gallery-photo--6 {
-      background: url("../img/6.jpg") no-repeat;
-      background-size: cover; }
-    .portfolio__gallery-photo--7 {
-      background: url("../img/7.jpg") no-repeat;
-      background-size: cover; }
-    .portfolio__gallery-photo--8 {
-      background: url("../img/8.jpg") no-repeat;
-      background-size: cover; }
-    .portfolio__gallery-photo--9 {
-      background: url("../img/9.jpg") no-repeat;
-      background-size: cover; }
-    .portfolio__gallery-photo--10 {
-      background: url("../img/10.jpg") no-repeat;
-      background-size: cover; }
+    height: 200px;
+    cursor: pointer; }
+
+.overlay-gallery {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.8); }
+  .overlay-gallery_close {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    padding: 0 10px;
+    color: #e5e5e5;
+    font-size: 45px;
+    text-align: center;
+    cursor: pointer; }
+
+.overlay-gallery_controls {
+  position: relative;
+  margin: auto; }
+
+.overlay-gallery_control {
+  display: inline-block;
+  width: 30px;
+  height: 46px;
+  vertical-align: middle;
+  background: url("../img/arrows-sprite.png") no-repeat;
+  cursor: pointer; }
+
+.overlay-gallery_control-right {
+  background-position: -30px 0; }
+
+.overlay-gallery_preview {
+  position: relative;
+  display: inline-block;
+  min-width: 300px;
+  min-height: 300px;
+  vertical-align: middle;
+  font-size: 0; }
+
+.overlay-gallery_preview-number {
+  position: absolute;
+  top: -1.5em;
+  left: 0;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff; }
 
 .section-4 {
   display: flex;
@@ -253,3 +276,6 @@ header {
     background: url("../img/tw.png") no-repeat; }
   .icon--inst {
     background: url("../img/inst.png") no-repeat; }
+
+.invisible {
+  display: none; }

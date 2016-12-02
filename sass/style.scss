@@ -240,19 +240,78 @@ header {
     height: 425px;
   }
 
-
   &__gallery-photo {
+    display: block;
     width: 200px;
     height: 200px;
-
-    @for $i from 1 through 10 {
-      &--#{$i} {
-        background: url("../img/#{$i}.jpg") no-repeat;
-        background-size: cover;
-      }
-    }
+    cursor: pointer;
   }
 }
+//
+.overlay-gallery {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  overflow: auto;
+
+  background: rgba(0, 0, 0, 0.8);
+
+  &_close {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    padding: 0 10px;
+    color: $grey;
+    font-size: 45px;
+    text-align: center;
+
+    cursor: pointer;
+  }
+}
+
+.overlay-gallery_controls {
+  position: relative;
+  margin: auto;
+}
+
+.overlay-gallery_control {
+  display: inline-block;
+  width: 30px;
+  height: 46px;
+
+  vertical-align: middle;
+
+  background: url("../img/arrows-sprite.png") no-repeat;
+  cursor: pointer;
+}
+
+.overlay-gallery_control-right {
+  background-position: -30px 0;
+}
+
+.overlay-gallery_preview {
+  position: relative;
+  display: inline-block;
+  min-width: 300px;
+  min-height: 300px;
+  vertical-align: middle;
+  font-size: 0;
+}
+
+.overlay-gallery_preview-number {
+  position: absolute;
+  top: -1.5em;
+  left: 0;
+
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+}
+//
 
 .section-4 {
   display: flex;
@@ -308,6 +367,9 @@ header {
   }
 }
 
+.invisible {
+  display: none;
+}
 
 
 

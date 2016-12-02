@@ -10,10 +10,10 @@
     <header>
         <nav class="main-nav">
             <ul class="main-nav__list">
-                <li><a class="main-nav__list-item" href="#section-1">Home</a></li>
-                <li><a class="main-nav__list-item" href="#section-2">About me</a></li>
-                <li><a class="main-nav__list-item" href="#section-3">Portfolio</a></li>
-                <li><a class="main-nav__list-item" href="#section-4">Contact</a></li>
+                <li><a class="main-nav__list-item" href="#section-1" data-index='1'>Home</a></li>
+                <li><a class="main-nav__list-item" href="#section-2" data-index='2'>About me</a></li>
+                <li><a class="main-nav__list-item" href="#section-3" data-index='3'>Portfolio</a></li>
+                <li><a class="main-nav__list-item" href="#section-4" data-index='4'>Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -54,16 +54,16 @@
                 <div class="portfolio">
                     <h2 class="portfolio__title">Portfolio</h2>
                     <div class="portfolio__gallery">
-                        <div class="portfolio__gallery-photo portfolio__gallery-photo--1"></div>
-                        <div class="portfolio__gallery-photo portfolio__gallery-photo--2"></div>
-                        <div class="portfolio__gallery-photo portfolio__gallery-photo--3"></div>
-                        <div class="portfolio__gallery-photo portfolio__gallery-photo--4"></div>
-                        <div class="portfolio__gallery-photo portfolio__gallery-photo--5"></div>
-                        <div class="portfolio__gallery-photo portfolio__gallery-photo--6"></div>
-                        <div class="portfolio__gallery-photo portfolio__gallery-photo--7"></div>
-                        <div class="portfolio__gallery-photo portfolio__gallery-photo--8"></div>
-                        <div class="portfolio__gallery-photo portfolio__gallery-photo--9"></div>
-                        <div class="portfolio__gallery-photo portfolio__gallery-photo--10"></div>
+                        <img class="portfolio__gallery-photo" src="img/1.jpg"></img>
+                        <img class="portfolio__gallery-photo" src="img/2.jpg"></img>
+                        <img class="portfolio__gallery-photo" src="img/3.jpg"></img>
+                        <img class="portfolio__gallery-photo" src="img/4.jpg"></img>
+                        <img class="portfolio__gallery-photo" src="img/5.jpg"></img>
+                        <img class="portfolio__gallery-photo" src="img/6.jpg"></img>
+                        <img class="portfolio__gallery-photo" src="img/7.jpg"></img>
+                        <img class="portfolio__gallery-photo" src="img/8.jpg"></img>
+                        <img class="portfolio__gallery-photo" src="img/9.jpg"></img>
+                        <img class="portfolio__gallery-photo" src="img/10.jpg"></img>
                     </div>
                 </div>
                 <footer class="scroll">
@@ -71,6 +71,20 @@
                     <div class="scroll__arrows"></div>
                 </footer>
             </div>
+
+            <div class="overlay-gallery invisible">
+                <div class="overlay-gallery_controls">
+                    <span class="overlay-gallery_close">&times;</span>
+                    <div class="overlay-gallery_control overlay-gallery_control-left"></div>
+                    <div class="overlay-gallery_preview">
+                        <div class="overlay-gallery_preview-number">
+                            <span class="preview-number-current">0</span> из <span class="preview-number-total">0</span>
+                        </div>
+                    </div>
+                    <div class="overlay-gallery_control overlay-gallery_control-right"></div>
+                </div>
+            </div>
+
         </section>
         <section class="section-4" id="section-4">
             <div class="wrap">
@@ -91,7 +105,7 @@
     </main>
 
     <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.onepage-scroll.min.js"></script>
+    <script src="js/onepage.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
