@@ -67,8 +67,8 @@ Gallery.prototype.setActivePicture = function(number) {
     this.activePicture = number;
     var picture = new Image();
     picture.src = this.pictures[number];
-    picture.style.width = '600px';
-    picture.style.height = '600px';
+    picture.style.width = '100%';
+    picture.style.height = '100%';
 
     this.previewNumberCurrent.textContent = this.activePicture + 1;
     this.previewNumberTotal.textContent = this.pictures.length;

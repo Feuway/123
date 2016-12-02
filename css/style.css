@@ -226,8 +226,8 @@ header {
 .overlay-gallery_preview {
   position: relative;
   display: inline-block;
-  min-width: 300px;
-  min-height: 300px;
+  width: 70vh;
+  height: 70vh;
   vertical-align: middle;
   font-size: 0; }
 

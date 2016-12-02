@@ -257,7 +257,6 @@ header {
   z-index: 1;
   display: flex;
   overflow: auto;
-
   background: rgba(0, 0, 0, 0.8);
 
   &_close {
@@ -268,7 +267,6 @@ header {
     color: $grey;
     font-size: 45px;
     text-align: center;
-
     cursor: pointer;
   }
 }
@@ -282,9 +280,7 @@ header {
   display: inline-block;
   width: 30px;
   height: 46px;
-
   vertical-align: middle;
-
   background: url("../img/arrows-sprite.png") no-repeat;
   cursor: pointer;
 }
@@ -296,8 +292,8 @@ header {
 .overlay-gallery_preview {
   position: relative;
   display: inline-block;
-  min-width: 300px;
-  min-height: 300px;
+  width: 70vh;
+  height: 70vh;
   vertical-align: middle;
   font-size: 0;
 }
